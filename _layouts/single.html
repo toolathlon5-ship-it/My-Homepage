@@ -1,6 +1,9 @@
-            {%- if page.codeurl -%}{% unless first %} | {% endunless %}
-              {% if page.code_status %}
-                <a href="{{ page.codeurl }}" target="_blank" rel="noopener" class="code-status">Code (GitHub) - {{ page.code_status }}</a>
-              {% else %}
-                <a href="{{ page.codeurl }}" target="_blank" rel="noopener">Code (GitHub)</a>
-              {% endif %}{% assign first = false %}{%- endif -%}
+<style>
+.code-status {
+  color: #2c5aa0;
+  font-weight: bold;
+}
+</style>
+
+<div id="main" role="main">
+  {% include sidebar.html %}
